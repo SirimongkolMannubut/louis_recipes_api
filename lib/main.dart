@@ -440,7 +440,7 @@ class RecipeCard extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(20),
           child: Column(
-          children: [
+            children: [
             Stack(
               children: [
                 Container(
@@ -603,7 +603,8 @@ class RecipeCard extends StatelessWidget {
                 ],
               ),
             ),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -931,7 +932,8 @@ class RecipeDetailScreen extends StatelessWidget {
                   SizedBox(height: 24),
                   
                   // แท็ก
-                  if (recipe.tags.isNotEmpty) ..[
+                  if (recipe.tags.isNotEmpty) ...
+                  [
                     Text(
                       'แท็ก',
                       style: TextStyle(
@@ -961,7 +963,7 @@ class RecipeDetailScreen extends StatelessWidget {
                         ),
                       )).toList(),
                     ),
-                  ],
+                  ]
                   
                   SizedBox(height: 32),
                 ],
