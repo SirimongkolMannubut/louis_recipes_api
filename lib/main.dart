@@ -963,7 +963,7 @@ class RecipeDetailScreen extends StatelessWidget {
                         ),
                       )).toList(),
                     ),
-                  ]
+                  ],
                   
                   SizedBox(height: 32),
                 ],
